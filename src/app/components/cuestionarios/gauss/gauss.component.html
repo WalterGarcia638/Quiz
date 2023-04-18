@@ -1,0 +1,317 @@
+<div class="container">
+
+    <!--Pregnta numero 1-->
+
+    <div *ngIf="numeroPregunta == 1">
+
+        <div class="container mt-4">
+            <h1 class="mb-4 estiloPreguntas">Pregunta 1</h1>
+            <p class="mb-4 estiloRespueta">¿Cuál es la capital de España?</p>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(1)">Madrid</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(2)">Barcelona</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(3)">Valencia</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(4)">Sevilla</button>
+                </div>
+            </div>
+            <br/>
+            <button class="btn btn-success mt-4" (click)="validarRespueta()">Enviar respuesta</button>
+        </div>
+
+
+
+
+
+        <!-- <button type="submit" class="btn btn-primary" (click)="validarRespueta()">Enviar</button>-->
+
+    </div>
+
+    <!--<div *ngIf="numeroPregunta == 1">
+        <p class="estiloPreguntas">Cual es la respuesta correcta(A)</p>
+
+        <input class="form-check-input" type="radio" value="1" name="pregunta1" (change)="cambiarCheck($event)">
+        <label class="form-check-label" class="estiloRespueta">respueta 1</label>
+        <br/>
+        <input class="form-check-input" type="radio" value="2" name="pregunta1" (change)="cambiarCheck($event)">
+        <label class="form-check-label" class="estiloRespueta">respueta 2</label>
+        <br/>
+        <input class="form-check-input" type="radio" value="3" name="pregunta1" (change)="cambiarCheck($event)">
+        <label class="form-check-label" class="estiloRespueta">respueta 3</label>
+        <br/>
+        <input class="form-check-input" type="radio" value="4" name="pregunta1" (change)="cambiarCheck($event)">
+        <label class="form-check-label" class="estiloRespueta">respueta 4</label>
+        <br/>
+        <br/>
+        <button type="submit" class="btn btn-primary" (click)="validarRespueta()">Enviar</button>
+
+    </div>-->
+
+    <!--Pregnta numero 2-->
+    <div *ngIf="numeroPregunta == 2">
+        <div class="container mt-4">
+            <h1 class="mb-4 estiloPreguntas">Pregunta 2</h1>
+            <p class="mb-4 estiloRespueta">¿Cuál es la capital de España?</p>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(1)">Madrid</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(2)">Barcelona</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(3)">Valencia</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(4)">Sevilla</button>
+                </div>
+            </div>
+            <br/>
+            <button class="btn btn-success mt-4" (click)="validarRespueta()">Enviar respuesta</button>
+        </div>
+
+    </div>
+
+    <!--Pregnta numero 3-->
+    <div *ngIf="numeroPregunta == 3">
+        <div class="container mt-4">
+            <h1 class="mb-4 estiloPreguntas">Pregunta 3</h1>
+            <p class="mb-4 estiloRespueta">¿Cuál es la capital de España?</p>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(1)">Madrid</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(2)">Barcelona</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(3)">Valencia</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(4)">Sevilla</button>
+                </div>
+            </div>
+            <br/>
+            <button class="btn btn-success mt-4" (click)="validarRespueta()">Enviar respuesta</button>
+        </div>
+
+    </div>
+
+    <!--Pregnta numero 4-->
+    <div *ngIf="numeroPregunta == 4">
+        <div class="container mt-4">
+            <h1 class="mb-4 estiloPreguntas">Pregunta 4</h1>
+            <p class="mb-4 estiloRespueta">¿Cuál es la capital de España?</p>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(1)">Madrid</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(2)">Barcelona</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(3)">Valencia</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(4)">Sevilla</button>
+                </div>
+            </div>
+            <br/>
+            <button class="btn btn-success mt-4" (click)="validarRespueta()">Enviar respuesta</button>
+        </div>
+
+    </div>
+
+    <!--Pregnta numero 5-->
+    <div *ngIf="numeroPregunta == 5">
+        <div class="container mt-4">
+            <h1 class="mb-4 estiloPreguntas">Pregunta 5</h1>
+            <p class="mb-4 estiloRespueta">¿Cuál es la capital de España?</p>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(1)">Madrid</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(2)">Barcelona</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(3)">Valencia</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(4)">Sevilla</button>
+                </div>
+            </div>
+            <br/>
+            <button class="btn btn-success mt-4" (click)="validarRespueta()">Enviar respuesta</button>
+        </div>
+
+    </div>
+
+    <!--Pregnta numero 6-->
+    <div *ngIf="numeroPregunta == 6">
+        <div class="container mt-4">
+            <h1 class="mb-4 estiloPreguntas">Pregunta 6</h1>
+            <p class="mb-4 estiloRespueta">¿Cuál es la capital de España?</p>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(1)">Madrid</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(2)">Barcelona</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(3)">Valencia</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(4)">Sevilla</button>
+                </div>
+            </div>
+            <br/>
+            <button class="btn btn-success mt-4" (click)="validarRespueta()">Enviar respuesta</button>
+        </div>
+
+    </div>
+
+    <!--Pregnta numero 7-->
+    <div *ngIf="numeroPregunta == 7">
+        <div class="container mt-4">
+            <h1 class="mb-4 estiloPreguntas">Pregunta 7</h1>
+            <p class="mb-4 estiloRespueta">¿Cuál es la capital de España?</p>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(1)">Madrid</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(2)">Barcelona</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(3)">Valencia</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(4)">Sevilla</button>
+                </div>
+            </div>
+            <br/>
+            <button class="btn btn-success mt-4" (click)="validarRespueta()">Enviar respuesta</button>
+        </div>
+
+    </div>
+
+    <!--Pregnta numero 8-->
+    <div *ngIf="numeroPregunta == 8">
+        <div class="container mt-4">
+            <h1 class="mb-4 estiloPreguntas">Pregunta 8</h1>
+            <p class="mb-4 estiloRespueta">¿Cuál es la capital de España?</p>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(1)">Madrid</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(2)">Barcelona</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(3)">Valencia</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(4)">Sevilla</button>
+                </div>
+            </div>
+            <br/>
+            <button class="btn btn-success mt-4" (click)="validarRespueta()">Enviar respuesta</button>
+        </div>
+
+    </div>
+
+    <!--Pregnta numero 9-->
+    <div *ngIf="numeroPregunta == 9">
+        <div class="container mt-4">
+            <h1 class="mb-4 estiloPreguntas">Pregunta 9</h1>
+            <p class="mb-4 estiloRespueta">¿Cuál es la capital de España?</p>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(1)">Madrid</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(2)">Barcelona</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(3)">Valencia</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(4)">Sevilla</button>
+                </div>
+            </div>
+            <br/>
+            <button class="btn btn-success mt-4" (click)="validarRespueta()">Enviar respuesta</button>
+        </div>
+
+    </div>
+
+    <!--Pregnta numero 10-->
+    <div *ngIf="numeroPregunta == 10">
+        <div class="container mt-4">
+            <h1 class="mb-4 estiloPreguntas">Pregunta 10</h1>
+            <p class="mb-4 estiloRespueta">¿Cuál es la capital de España?</p>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(1)">Madrid</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(2)">Barcelona</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(3)">Valencia</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(4)">Sevilla</button>
+                </div>
+            </div>
+            <br/>
+            <button class="btn btn-success mt-4" (click)="validarRespueta()">Enviar respuesta</button>
+        </div>
+
+    </div>
+
+    <div *ngIf="numeroPregunta > 10">
+        <p style="color:white">Resultado Final</p>
+
+        <div class="row" *ngIf="numeroPregunta > 10 && puntaje <= 6">
+            <div class="col-md-12 text-center">
+                <h1 style="color:white">¡Has perdido!</h1>
+                <img src="https://us.123rf.com/450wm/romastudio/romastudio1905/romastudio190500048/123396236-la-mano-del-hombre-muestra-el-pulgar-hacia-abajo-aislado-sobre-fondo-blanco-concepto-negativo-de.jpg?ver=6" alt="Imagen perdido" class="img-fluid">
+                <p>Inténtalo de nuevo</p>
+                <a [routerLink]="['/Cuestionarios']" class="btn btn-primary">Volver a intentarlo</a>
+            </div>
+        </div>
+
+        <div class="row" *ngIf="numeroPregunta > 10 && puntaje >= 7">
+            <div class="col-md-12 text-center">
+                <h1 style="color:white">¡Has Ganado!</h1>
+                <img src="https://thumbs.dreamstime.com/b/mano-de-mujer-con-el-pulgar-hacia-arriba-aislado-sobre-fondo-blanco-174869555.jpg" alt="Imagen perdido" class="img-fluid">
+                <p>Inténtalo de nuevo</p>
+                <a [routerLink]="['/Cuestionarios']" class="btn btn-primary">Volver a intentarlo</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container" style="margin-top: 20px;">
+        <p class="estiloRespueta">Puntaje: {{puntaje}}</p>
+    </div>
+</div>

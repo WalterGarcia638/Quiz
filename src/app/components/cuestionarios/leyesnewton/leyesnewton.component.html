@@ -1,0 +1,319 @@
+<div class="container">
+
+    <!--Pregnta numero 1-->
+
+    <div *ngIf="numeroPregunta == 1">
+
+        <div class="container mt-4">
+            <h1 class="mb-4 estiloPreguntas">Pregunta 1</h1>
+            <p class="mb-4 estiloRespueta">Un objeto en reposo permanecerá en reposo y un objeto en movimiento continuará moviéndose con velocidad constante en línea recta, a menos que una fuerza neta actúe sobre él. Matemáticamente se puede expresar como F = ma, donde F es la fuerza
+                neta aplicada, m es la masa del objeto y a es su aceleración.</p>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(1)">Ley de inercia</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(2)">Ley de Coulomb</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(3)">Ley de Gauss</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(4)">Ley de fuerza</button>
+                </div>
+            </div>
+            <br/>
+            <button class="btn btn-success mt-4" (click)="validarRespueta()">Enviar respuesta</button>
+        </div>
+
+
+
+
+
+        <!-- <button type="submit" class="btn btn-primary" (click)="validarRespueta()">Enviar</button>-->
+
+    </div>
+
+    <!--<div *ngIf="numeroPregunta == 1">
+        <p class="estiloPreguntas">Cual es la respuesta correcta(A)</p>
+
+        <input class="form-check-input" type="radio" value="1" name="pregunta1" (change)="cambiarCheck($event)">
+        <label class="form-check-label" class="estiloRespueta">respueta 1</label>
+        <br/>
+        <input class="form-check-input" type="radio" value="2" name="pregunta1" (change)="cambiarCheck($event)">
+        <label class="form-check-label" class="estiloRespueta">respueta 2</label>
+        <br/>
+        <input class="form-check-input" type="radio" value="3" name="pregunta1" (change)="cambiarCheck($event)">
+        <label class="form-check-label" class="estiloRespueta">respueta 3</label>
+        <br/>
+        <input class="form-check-input" type="radio" value="4" name="pregunta1" (change)="cambiarCheck($event)">
+        <label class="form-check-label" class="estiloRespueta">respueta 4</label>
+        <br/>
+        <br/>
+        <button type="submit" class="btn btn-primary" (click)="validarRespueta()">Enviar</button>
+
+    </div>-->
+
+    <!--Pregnta numero 2-->
+    <div *ngIf="numeroPregunta == 2">
+        <div class="container mt-4">
+            <h1 class="mb-4 estiloPreguntas">Pregunta 2</h1>
+            <p class="mb-4 estiloRespueta">¿Si un objeto se mueve en un círculo a una velocidad constante, la fuerza que lo mantiene en movimiento según las leyes de Newton?</p>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(1)">Fuerza de gravedad</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(2)">fuerza centrípeta</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(3)">Fuerza dinámica</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(4)">Fuerza relativa</button>
+                </div>
+            </div>
+            <br/>
+            <button class="btn btn-success mt-4" (click)="validarRespueta()">Enviar respuesta</button>
+        </div>
+
+    </div>
+
+    <!--Pregnta numero 3-->
+    <div *ngIf="numeroPregunta == 3">
+        <div class="container mt-4">
+            <h1 class="mb-4 estiloPreguntas">Pregunta 3</h1>
+            <p class="mb-4 estiloRespueta">Es la fuerza neta aplicada a un objeto es igual a la tasa de cambio de su momento lineal, es decir, la masa del objeto multiplicada por su velocidad. Matemáticamente se puede expresar como F = dp/dt, donde F es la fuerza neta aplicada y dp/dt
+                es la tasa de cambio del momento lineal</p>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(1)">Fuerza maxima</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(2)">Fuerza resultante</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(3)">Fricción</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(4)">Ley de la fuerza</button>
+                </div>
+            </div>
+            <br/>
+            <button class="btn btn-success mt-4" (click)="validarRespueta()">Enviar respuesta</button>
+        </div>
+
+    </div>
+
+    <!--Pregnta numero 4-->
+    <div *ngIf="numeroPregunta == 4">
+        <div class="container mt-4">
+            <h1 class="mb-4 estiloPreguntas">Pregunta 4</h1>
+            <p class="mb-4 estiloRespueta">Establece que Para cada acción, hay una reacción igual y opuesta</p>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(1)">Ley de acción y reacción</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(2)">Ley de gravedad</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(3)">Ley de Ohm</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(4)">Ley de Faraday</button>
+                </div>
+            </div>
+            <br/>
+            <button class="btn btn-success mt-4" (click)="validarRespueta()">Enviar respuesta</button>
+        </div>
+
+    </div>
+
+    <!--Pregnta numero 5-->
+    <div *ngIf="numeroPregunta == 5">
+        <div class="container mt-4">
+            <h1 class="mb-4 estiloPreguntas">Pregunta 5</h1>
+            <p class="mb-4 estiloRespueta">¿Cuál es la ley que establece que un objeto que está en movimiento seguirá moviéndose a menos que una fuerza neta actúe sobre él ?</p>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(1)">Ley de acción y reacción</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(2)">Ley de Coulomb</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(3)">Ley de la fuerza:</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(4)">ley de la inercia</button>
+                </div>
+            </div>
+            <br/>
+            <button class="btn btn-success mt-4" (click)="validarRespueta()">Enviar respuesta</button>
+        </div>
+
+    </div>
+
+    <!--Pregnta numero 6-->
+    <div *ngIf="numeroPregunta == 6">
+        <div class="container mt-4">
+            <h1 class="mb-4 estiloPreguntas">Pregunta 6</h1>
+            <p class="mb-4 estiloRespueta">Si un automóvil se mueve a una velocidad constante y luego se aplica el freno, ¿qué sucede según la primera ley de Newton? </p>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(1)">aumenta su velocidad de forma constante</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(2)">disminuye la velocidad del automóvil pero no se detiene</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(3)">disminuye la velocidad del automóvil y eventualmente lo detiene</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(4)">Ninguna de las anteriores</button>
+                </div>
+            </div>
+            <br/>
+            <button class="btn btn-success mt-4" (click)="validarRespueta()">Enviar respuesta</button>
+        </div>
+
+    </div>
+
+    <!--Pregnta numero 7-->
+    <div *ngIf="numeroPregunta == 7">
+        <div class="container mt-4">
+            <h1 class="mb-4 estiloPreguntas">Pregunta 7</h1>
+            <p class="mb-4 estiloRespueta">¿Ley que estable el por qué un objeto más pesado requiere más fuerza para moverse que un objeto más liviano? </p>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(1)"> Segunda ley de Newton</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(2)">Ley de Faraday</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(3)">Primera Ley de Newton</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(4)">Tercera ley de Newton</button>
+                </div>
+            </div>
+            <br/>
+            <button class="btn btn-success mt-4" (click)="validarRespueta()">Enviar respuesta</button>
+        </div>
+
+    </div>
+
+    <!--Pregnta numero 8-->
+    <div *ngIf="numeroPregunta == 8">
+        <div class="container mt-4">
+            <h1 class="mb-4 estiloPreguntas">Pregunta 8</h1>
+            <p class="mb-4 estiloRespueta">Es importante para entender cómo funcionan las máquinas porque las máquinas utilizan el principio de la acción y la reacción para realizar trabajo</p>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(1)">Teorema de Norton</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(2)">Leyes de Newton</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(3)">Ley de la corriente de Kirchhoff </button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(4)">Teorema de Thévenin</button>
+                </div>
+            </div>
+            <br/>
+            <button class="btn btn-success mt-4" (click)="validarRespueta()">Enviar respuesta</button>
+        </div>
+
+    </div>
+
+    <!--Pregnta numero 9-->
+    <div *ngIf="numeroPregunta == 9">
+        <div class="container mt-4">
+            <h1 class="mb-4 estiloPreguntas">Pregunta 9</h1>
+            <p class="mb-4 estiloRespueta">Si un objeto se mueve en un círculo a una velocidad constante, ¿cuál es la fuerza que lo mantiene en movimiento según las leyes de Newton? </p>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(1)">Fuerza de gravedad</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(2)">Fuerza estática</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(3)">Fuerza centrípeta</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(4)">Fuerza resistencia</button>
+                </div>
+            </div>
+            <br/>
+            <button class="btn btn-success mt-4" (click)="validarRespueta()">Enviar respuesta</button>
+        </div>
+
+    </div>
+
+    <!--Pregnta numero 10-->
+    <div *ngIf="numeroPregunta == 10">
+        <div class="container mt-4">
+            <h1 class="mb-4 estiloPreguntas">Pregunta 10</h1>
+            <p class="mb-4 estiloRespueta">Ley que nos explica el por qué un objeto en caída libre experimenta una aceleración constante según las leyes de Newton</p>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(1)">Segunda ley de Newton</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(2)">Ley de gravitacion universal</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(3)">Ley de Coulomb.</button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary w-100" (click)="cambiarCheck(4)">Tercera ley de Newton</button>
+                </div>
+            </div>
+            <br/>
+            <button class="btn btn-success mt-4" (click)="validarRespueta()">Enviar respuesta</button>
+        </div>
+
+    </div>
+
+    <div *ngIf="numeroPregunta > 10">
+        <p style="color:white">Resultado Final</p>
+
+        <div class="row" *ngIf="numeroPregunta > 10 && puntaje <= 5">
+            <div class="col-md-12 text-center">
+                <h1 style="color:white">¡Has perdido!</h1>
+                <img src="https://us.123rf.com/450wm/romastudio/romastudio1905/romastudio190500048/123396236-la-mano-del-hombre-muestra-el-pulgar-hacia-abajo-aislado-sobre-fondo-blanco-concepto-negativo-de.jpg?ver=6" alt="Imagen perdido" class="img-fluid">
+                <p>Inténtalo de nuevo</p>
+                <a [routerLink]="['/Cuestionarios']" class="btn btn-primary">Volver a intentarlo</a>
+            </div>
+        </div>
+
+        <div class="row" *ngIf="numeroPregunta > 10 && puntaje >= 5">
+            <div class="col-md-12 text-center">
+                <h1 style="color:white">¡Has Ganado!</h1>
+                <img src="https://thumbs.dreamstime.com/b/mano-de-mujer-con-el-pulgar-hacia-arriba-aislado-sobre-fondo-blanco-174869555.jpg" alt="Imagen perdido" class="img-fluid">
+                <p>Inténtalo de nuevo</p>
+                <a [routerLink]="['/Cuestionarios']" class="btn btn-primary">Volver a intentarlo</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container" style="margin-top: 20px;">
+        <p class="estiloRespueta">Puntaje: {{puntaje}}</p>
+    </div>
+</div>
